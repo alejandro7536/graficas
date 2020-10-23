@@ -1,0 +1,31 @@
+<div class="rounded-md p-6 bg-white shadow">
+  <div class="mb-2 pb-2 flex flex-row justify-between">
+    <div>
+      <h3 class="font-semibold text-lg text-gray-600">Gráfico de radar</h3>
+      <p class="text-sm text-gray-500">Ejemplo de creación de un gráfico de radar</p>
+    </div>
+    <button type="button" class="inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:text-gray-800 active:bg-gray-50 transition duration-150 ease-in-out"
+     (click)="randomize()">
+
+    <svg class="-ml-1 mr-2 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+    </svg>
+    Actualizar
+    </button>
+
+
+  </div>
+  <div id="chartdiv" class="w-full" style="height: 300px">
+
+    <div style="display: block">
+      <canvas baseChart
+        [datasets]="radarChartData"
+        [options]="radarChartOptions"
+        [labels]="radarChartLabels"
+        [chartType]="radarChartType">
+      </canvas>
+    </div>
+
+
+  </div>
+</div>

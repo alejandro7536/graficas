@@ -1,0 +1,29 @@
+<div class="rounded-md p-6 bg-white shadow">
+  <div class="mb-2 pb-2 flex flex-row justify-between">
+    <div>
+      <h3 class="font-semibold text-lg text-gray-600">Gráfico de área</h3>
+      <p class="text-sm text-gray-500">Ejemplo de creación de un gráfico de área</p>
+    </div>
+
+
+  </div>
+  <div id="chartdiv" class="w-full" style="height: 350px">
+    <div id="chart">
+      <apx-chart
+        [series]="chartOptions.series"
+        [chart]="chartOptions.chart"
+        [xaxis]="chartOptions.xaxis"
+        [stroke]="chartOptions.stroke"
+        [tooltip]="chartOptions.tooltip"
+        [dataLabels]="chartOptions.dataLabels"
+        [fill]="chartOptions.fill"
+        [yaxis]="chartOptions.yaxis"
+        [title]="chartOptions.title"
+      ></apx-chart>
+    </div>
+
+
+
+
+  </div>
+</div>
